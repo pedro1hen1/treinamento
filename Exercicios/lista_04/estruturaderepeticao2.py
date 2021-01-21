@@ -3,27 +3,29 @@
 __author__ = '@pedro1hen1'
 
 
+
 def ex01():
-    # Exercicio 01
-    """Faça um programa que peça um número inteiro e determine se ele é ou não
-    um número primo. Um número primo é aquele que é divisível somente por ele
+    #Exercicio 01
+    """Faça um programa que peça um número inteiro e determine se ele é ou não 
+    um número primo. Um número primo é aquele que é divisível somente por ele 
     mesmo e por 1."""
-    # entrada de numero
-    n = int(input("Insira um numero para começar "))
-    contaresto = 0
-    for i in range(1, n + 1):
-        resto = n % i
-        if resto == 0:
-            contaresto = contaresto + 1
-    if contaresto == 1 or contaresto == 2:
-        print(n, "-> é um numero primo")
+    #entrada de numero
+    n=int(input("Insira um numero para começar "))
+    contaresto=0
+    for i in range(1,n+1):
+        resto=n%i
+        if resto==0:
+            contaresto=contaresto+1
+    if contaresto==1 or contaresto==2:
+        print(n,"-> é um numero primo")
     else:
-        print(n, "->nao é um numero primo")
+        print(n,"->nao é um numero primo")
+        
 
 
 def ex02():
-    # Exercicio 02
-    """Copie e altere o programa de cálculo dos números primos, informando,
+    #Exercicio 02
+    """Copie e altere o programa de cálculo dos números primos, informando, 
     caso o número não seja primo, por quais número ele é divisível.
     """
     print("_" * 40)
@@ -45,6 +47,8 @@ def ex02():
     else:
         print("_" * 40)
         print("O numero não é primo sendo divisível por -> ", lista)
+        
+
 
 
 def ex03():
@@ -64,7 +68,7 @@ def ex03():
         else:
             divisoes += 1
     print("|Números primos ->", lista, "\n|Executou", divisoes, "divisões")
-
+    
 
 def ex04():
     # Exercicio 04
@@ -95,31 +99,34 @@ def ex04():
     print("[26-50]-> ", len(lista50))
     print("[51-75]-> ", len(lista75))
     print("[76-100]-> ", len(lista100))
+    
 
 
 def ex05():
-    # Exercicio 05
+    #Exercicio 05
     """Faça um programa que peça para n pessoas a sua idade, ao final o programa
     deverá verificar se a média de idade da turma varia entre 0 e 25, 26 e 60 e
     maior que 60; e então, dizer se a turma é jovem, adulta ou idosa, conforme a
     média calculada."""
-    print("_" * 50)
-    n_notas = int(input("Insira a quantidade de pessoas que tem na turma-> "))
-    print("_" * 50)
+    print("_"*50)
+    n_notas=int(input("Insira a quantidade de pessoas que tem na turma-> "))
+    print("_"*50)
     print("Agora insira a idade de cada uma delas->")
-    print("_" * 50)
-    contadora = 0
-    for i in range(1, n_notas + 1):
-        notas = int(input("-informe a idade :\n"))
-        contadora = contadora + notas
-    media = contadora / n_notas
-    print("a média de idade da turma é-->", media)
-    if media <= 25:
+    print("_"*50)
+    contadora=0
+    for i in range(1,n_notas+1):
+        notas=int(input("-informe a idade :\n"))
+        contadora=contadora+notas
+    media=contadora/n_notas
+    print("a média de idade da turma é-->",media)
+    if media<=25:
         print("Turma de jovens")
-    elif media > 26 and media < 60:
+    elif media>26 and media<60:
         print("Turma de adultos")
     else:
         print("Turma de idosos")
+        
+
 
 
 def ex06():
@@ -151,6 +158,8 @@ def ex07():
         alunos1 = (alunos1 + alunos)
     media = (alunos1 / n)
     print("Então o número médio de alunos por turma é ->", media)
+    
+
 
 
 def ex08():
@@ -187,8 +196,7 @@ def ex09():
     for c in range(1, 51):
         count = 1.99 * c
         print(c, "-", "R$", count)
-
-
+        
 def ex10():
     # Exercicio 10
     """O Sr. Manoel Joaquim acaba de adquirir uma panificadora e pretende implantar
@@ -202,15 +210,14 @@ def ex10():
     2 - R$ 0.36
     ..
     50 - R$ 9.00
-
+    
     """
-    pao = float(input("Insira o valor de cada pão "))
+    pao=float(input("Insira o valor de cada pão "))
     print("Panificadora Pão de Ontem - Tabela de preços")
-    for i in range(1, 50 + 1):
-        count = pao * i
-        print(i, "-", "R$", count)
-
-
+    for i in range(1,50+1):
+        count=pao*i
+        print(i,"-","R$",count)
+        
 def ex11():
     # Exercicio 11
     """O Sr. Manoel Joaquim expandiu seus negócios para além dos negócios de 1,99
@@ -256,7 +263,7 @@ def ex11():
         print("\n" * 5)
         print("Registar nova compra")
         print("_" * 30)
-
+        
 
 def ex12():
     # Exercicio 12
@@ -275,7 +282,6 @@ def ex12():
         print(n, "-> é um numero primo")
     else:
         print(n, "->nao é um numero primo")
-
 
 def ex13():
     # Exercicio 13
@@ -290,7 +296,7 @@ def ex13():
             lista_primos.append(i)
 
     print("A sequencia de números primos -> ", lista_primos)
-
+    
 
 def ex12():
     # Exercicio 12
@@ -309,7 +315,7 @@ def ex12():
         print(n, "-> é um numero primo")
     else:
         print(n, "->nao é um numero primo")
-
+        
 
 def ex13():
     # Exercicio 13
@@ -335,7 +341,7 @@ def ex14():
     Montar a tabuada de: 5
     Começar por: 4
     Terminar em: 7
-
+    
     Vou montar a tabuada de 5 começando em 4 e terminando em 7:
     5 X 4 = 20
     5 X 5 = 25
@@ -351,8 +357,7 @@ def ex14():
     for i in range(inicio, fim + 1):
         print(tabuada, " X ", count, " = ", tabuada * count)
         count += 1
-
-
+        
 def ex15():
     # exercicio 15
     """Uma academia deseja fazer um censo entre seus clientes para descobrir o
@@ -394,7 +399,6 @@ def ex15():
     print("Média de altura: ", sum(altura_clientes) / len(altura_clientes))
     print("Média de peso: ", sum(peso_clientes) / len(peso_clientes))
 
-
 def ex16():
     # Exercicio 16
     """Um funcionário de uma empresa recebe aumento salarial anualmente: Sabe-se que:
@@ -410,7 +414,7 @@ def ex16():
         aumento = aumento * 2
         atual = entry_inicial + (entry_inicial * (aumento / 100))
         print("Salario em ", i, " = %.02f" % atual)
-
+        
 
 def ex17():
     # Exercicio 17
@@ -425,16 +429,16 @@ def ex17():
         aumento = aumento * 2
         atual = entry_inicial + (entry_inicial * (aumento / 100))
         print("Salario em ", i, " = %.02f" % atual)
-
+        
 
 def ex18():
-    # exercicio 18
+    #exercicio 18
     """Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:
     Código da cidade;
     Número de veículos de passeio (em 1999);
     Número de acidentes de trânsito com vítimas (em 1999).
-
-
+    
+    
     Deseja-se saber:
     Qual o maior e menor índice de acidentes de trânsito e a que cidade pertence;
     Qual a média de veículos nas cinco cidades juntas;
@@ -443,39 +447,37 @@ def ex18():
     codigo = int(input("Insira o código da cidade-> "))
     veiculos = int(input("Insira o número de veículos -> "))
     acidente = int(input("Insira o número de acidentes de transito com vitimas-> "))
-    contaveiculos = veiculos
-    maior_acidente = acidente
-    menor_acidente = acidente
-    contador = 0
-    for i in range(0, 4):
-        if veiculos > 2000:
-            contador = contador + 1
-            acidente_veiculos = acidente
-            acidente_veiculos = acidente + acidente_veiculos
+    contaveiculos=veiculos
+    maior_acidente=acidente
+    menor_acidente=acidente
+    contador=0
+    for i in range(0,4):
+        if veiculos>2000:
+            contador=contador+1
+            acidente_veiculos=acidente
+            acidente_veiculos=acidente+acidente_veiculos
         codigo = int(input("Informe o código da cidade-> "))
         veiculos = int(input("Informe o número de veículos de passeio-> "))
         acidente = int(input("Informe o número de acidentes de transito com vitimas-> "))
-        contaveiculos = contaveiculos + veiculos
+        contaveiculos=contaveiculos+veiculos
         if acidente > maior_acidente:
-            maior_acidente = acidente
-            codigomaior = codigo
-        elif acidente < menor_acidente:
-            menor_acidente = acidente
-            codigomenor = codigo
-    media2k = (acidente_veiculos / contador)
-    print("_" * 80)
-    print("O menor indice esta na cidade de de codigo ->", codigomenor, "com", menor_acidente, "acidentes")
-    print("_" * 80)
-    print("-o maior indice  está na cidade com codigo->", codigomaior, "com", maior_acidente, "acidentes")
-    print("_" * 80)
-    print("Todas as cidades acumulam um total de ->", contaveiculos, "veiculos, sendo a media de ->", contaveiculos / 5,
-          "veiculos por cidade")
-    print("_" * 80)
-    print("média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio", media2k)
-
+            maior_acidente=acidente
+            codigomaior=codigo
+        elif acidente<menor_acidente:
+            menor_acidente=acidente
+            codigomenor=codigo
+    media2k=(acidente_veiculos/contador)
+    print("_"*80)
+    print("O menor indice esta na cidade de de codigo ->", codigomenor ,"com",menor_acidente,"acidentes" )
+    print("_"*80)
+    print("-o maior indice  está na cidade com codigo->", codigomaior ,"com",maior_acidente,"acidentes")
+    print("_"*80)
+    print("Todas as cidades acumulam um total de ->", contaveiculos,"veiculos, sendo a media de ->",contaveiculos/5,"veiculos por cidade")
+    print("_"*80)
+    print("média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio", media2k )
 
 def ex19():
-    # Exercicio 19
+    #Exercicio 19
     """Faça um programa que receba o valor de uma dívida e mostre uma tabela com os seguintes dados: valor da dívida,
     valor dos juros, quantidade de parcelas e valor da parcela.
     Os juros e a quantidade de parcelas seguem a tabela abaixo:
@@ -494,12 +496,12 @@ def ex19():
 
     divida = float(input("Insira o valor da sua divida atual para consultar tabela: "))
     parcela = 1
-
+    
     print("Valor da divida: ", end="  ")
     print("Valor do juros: ", end="  ")
     print("Quantidade de parcelas: ", end="  ")
     print("Valor da parcela: ")
-
+    
     for i in range(5):
         if parcela == 1:
             juros = 1
@@ -516,11 +518,11 @@ def ex19():
         elif parcela == 13 or parcela == 12:
             parcela = 12
             juros = 1.25
-
+    
         v_juros = divida * (juros - 1)
         divida_com_juros = divida * juros
         valor_parcela = divida_com_juros / parcela
-
+    
         print("R$", round(divida_com_juros, 2), end="            ")
         print(round(v_juros, 2), end="                  ")
         print(parcela, end="                        ")
@@ -538,7 +540,7 @@ def ex20():
     Hambúrguer      103     R$ 1,20
     Cheeseburguer   104     R$ 1,30
     Refrigerante    105     R$ 1,00
-
+    
     Faça um programa que leia o código dos itens pedidos e as quantidades desejadas. Calcule e mostre o valor a ser pago por item (preço * quantidade) e o total geral do pedido. Considere que o cliente deve informar quando o pedido deve ser encerrado.
     Em uma eleição presidencial existem
     """
@@ -574,7 +576,7 @@ def ex20():
         print("Pedido ", pedido_nota + 1, ": = R$", round(pedido[pedido_nota], 2))
         pedido_nota += 1
     print("Total: R$", round(sum(pedido), 2))
-
+    
 
 def ex21():
     # exercicio 21
@@ -583,7 +585,7 @@ def ex21():
     (você deve montar a tabela ex: 1 - Jose/ 2- João/etc)
     5 - Voto Nulo
     6 - Voto em Branco
-
+    
     Faça um programa que calcule e mostre:
     O total de votos para cada candidato;
     O total de votos nulos;
@@ -591,7 +593,7 @@ def ex21():
     A percentagem de votos nulos sobre o total de votos;
     A percentagem de votos em branco sobre o total de votos.
     Para finalizar o conjunto de votos tem-se o valor zero.
-
+    
     """
     possiveis_votos = [1, 2, 3, 4, 5, 6]
     candidatos = ['Boulos', 'Jair Bolsonaro', 'João Amoedo', 'Dilma do chefe', 'Nulo', 'Branco']
@@ -627,8 +629,7 @@ def ex21():
     porcentagem_branco = (votos.count(6) / len(votos)) * 100
     print("\nPorcentagem Nulos: ", round(porcentagem_nulo, 2), "%\nPorcentagem Brancos: ", round(porcentagem_branco, 2),
           "%")
-
-
+          
 def ex22():
     # exercicio 22
     """Desenvolver um programa para verificar a nota do aluno em uma prova com 10 questões,
@@ -652,7 +653,7 @@ def ex22():
     10 - A
     Após concluir isto você poderia incrementar o programa permitindo que o professor digite o
     gabarito da prova antes dos alunos usarem o programa.
-
+    
     """
     gabarito = []
     respostas_aluno = []
@@ -682,8 +683,7 @@ def ex22():
     print("A menor nota tirada foi: ", min(tira_n))
     print("A media de notas da turma foi de:", sum(tira_n) / len(tira_n))
     print(tira_n)
-
-
+    
 def ex23():
     # exercicio 23
     """Em uma competição de ginástica, cada atleta recebe votos de sete jurados.
@@ -727,8 +727,7 @@ def ex23():
             print("Media dos demais saltos: ", round(media, 2))
             print("Resultado Final: \n", nome_atleta, " : ", round(media, 2))
             n_atleta += 1
-
-
+            
 def ex24():
     # exercicio 24
     """Em uma competição de ginástica, cada atleta recebe votos de sete jurados.
@@ -773,5 +772,6 @@ def ex24():
             print("Media: ", round(media, 2))
             n_atleta += 1
             print("\n" * 5)
+            
 
 
